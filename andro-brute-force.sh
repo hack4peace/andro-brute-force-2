@@ -43,7 +43,7 @@ echo -e "$grn---------------------------------------------------$rset"
 
 for i in {00000..99999}; do
 
-    echo -e "$red TRYING $i$rset"
+    echo -e "$red $i$rset"
 	
     for (( j=0; j<${#i}; j++ )); do
         adb shell input keyevent $((`echo ${i:$j:1}`+7))
